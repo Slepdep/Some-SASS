@@ -1,0 +1,58 @@
+body {
+  background: #D9D6C5;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 30%;
+  background: #4B7C80;
+  border-radius: 10px;
+}
+
+.container .inner {
+  background: #5BBDB0;
+  padding: 1em;
+  border-radius: 10px;
+  width: calc(100% -2em);
+  -webkit-clip-path: inset(100% 0% 100% 0%);
+          clip-path: inset(100% 0% 100% 0%);
+  -webkit-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out;
+  cursor: pointer;
+}
+
+.container .inner h1 {
+  color: #083F4D;
+  margin: 0;
+  font-family: 'Bowlby One SC', cursive;
+}
+
+.container .inner p {
+  color: #083F4D;
+  margin: .8rem;
+  font-family: 'Supermercado One', cursive;
+}
+
+.container:hover .inner {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+}
+
+#title {
+  font-family: 'Bowlby One SC', cursive;
+  float: left;
+  text-align: left;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+/*# sourceMappingURL=main.css.map */

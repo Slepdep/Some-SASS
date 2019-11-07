@@ -1,0 +1,51 @@
+body {
+    background: #D9D6C5;
+    margin: 0;
+    height: 100vh;
+    display: grid; 
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+    width: 30%;
+    background: #4B7C80;
+    border-radius: 10px;
+
+      .inner {
+        background: #5BBDB0;
+          padding: 1em;
+          border-radius: 10px;
+          width: calc(100% -2em);
+          clip-path: inset(100% 0% 100% 0%);
+          transition: all .9s ease-in-out;
+          cursor: pointer;
+
+          h1 {
+              color: #083F4D;
+              margin: 0;
+              font-family: 'Bowlby One SC', cursive;
+          }
+
+          p {
+              color: #083F4D;
+              margin: .8rem;
+              font-family: 'Supermercado One', cursive;
+          }
+      }
+      &:hover .inner {
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}   
+
+#title {
+    font-family: 'Bowlby One SC', cursive;
+    float: left;
+    text-align: left;
+    align-content: left;
+    justify-content: left;
+}
+
+&:hover #title {
+    color: rgba($color: #000000, $alpha: 0);
+}
